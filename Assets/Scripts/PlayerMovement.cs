@@ -16,7 +16,7 @@ public class PlaterMovement : MonoBehaviour
     private void FixedUpdate()
     {
         Vector2 direction = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
-        _rb.linearVelocity = direction * speed;
+        _rb.linearVelocity = direction.normalized * speed;
     }
 
     // Update is called once per frame
