@@ -11,11 +11,12 @@ public class Object : MonoBehaviour
     private bool _interacted;
     public GameObject info;
 
+    public int health;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         _player = GameObject.FindGameObjectWithTag("player");        
-        _rt = interactionText.GetComponent<RectTransform>();
         interactionText.SetActive(false);
     }
 

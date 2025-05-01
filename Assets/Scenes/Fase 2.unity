@@ -512,6 +512,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2028770981}
     - target: {fileID: 361648878618816700, guid: 82fe4925940f5ff48bf79593d87f35b0, type: 3}
+      propertyPath: health
+      value: 123123
+      objectReference: {fileID: 0}
+    - target: {fileID: 361648878618816700, guid: 82fe4925940f5ff48bf79593d87f35b0, type: 3}
       propertyPath: interactionText
       value: 
       objectReference: {fileID: 323346204}
@@ -1343,10 +1347,10 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 0.0001
+  m_Mass: 1
   m_LinearDamping: 0
   m_AngularDamping: 0.05
-  m_GravityScale: 0
+  m_GravityScale: 10
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
