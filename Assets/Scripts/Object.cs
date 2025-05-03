@@ -5,11 +5,11 @@ using UnityEngine.Rendering;
 public class Object : MonoBehaviour
 {
     private GameObject _player;
-    private RectTransform _rt;
     public GameObject interactionText;
     private bool _canInteract;
     private bool _interacted;
     public GameObject info;
+
 
     public int health;
 
@@ -28,7 +28,7 @@ public class Object : MonoBehaviour
             GetDistance();
         }  
 
-        if(_canInteract && _interacted)
+        if(_interacted)
         {
             interactionText.SetActive(false);
             Destroy(gameObject);
