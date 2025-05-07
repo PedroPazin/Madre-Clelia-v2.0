@@ -4,29 +4,43 @@ using TMPro;
 
 public class ObjectManager : MonoBehaviour
 {
-    public static ObjectManager Instance { get; private set; }
+    GameObject[] objects;
+    int countObjets;
+    public static ObjectManager instance;
 
-    // Variables
-
-    void Awake()
+    private void Awake()
     {
-        if(Instance != null && Instance != this)
+        if (instance == null)
         {
-            Destroy(this);
+            instance = this;
+            DontDestroyOnLoad(gameObject);
         }
-        else 
+        else
         {
-            Instance = this;
+            Destroy(gameObject);
         }
     }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        objects = GameObject.FindGameObjectsWithTag("object");
+        countObjets = objects.Length;
     }
 
     // Update is called once per frame
     void Update()
     {
+        
+    }
+
+    public void CountObjects()
+    {
+        countObjets--;
+        if (countObjets <= 0)
+        {
+            SceneController.instance.NextLevel();
+        }
+
     }
 }

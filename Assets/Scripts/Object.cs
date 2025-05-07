@@ -32,6 +32,7 @@ public class Object : MonoBehaviour
         {
             interactionText.SetActive(false);
             Destroy(gameObject);
+            ObjectManager.instance.CountObjects();
         }      
     }
 
