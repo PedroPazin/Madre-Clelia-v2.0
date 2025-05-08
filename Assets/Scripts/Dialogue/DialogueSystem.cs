@@ -7,6 +7,11 @@ public enum STATE
     TYPING
 }
 
+public static class PlayerData
+{
+    public static string playerName;
+}
+
 public class DialogueSystem : MonoBehaviour
 {
     public DialogueData dialogueData;
@@ -58,7 +63,7 @@ public class DialogueSystem : MonoBehaviour
             dialogueUI.Enable();
         }
 
-        dialogueUI.SetName(dialogueData.talkScript[currentText].name);
+        dialogueUI.SetName(dialogueData.talkScript[currentText].name == "PLAYER" ? PlayerData.playerName :dialogueData.talkScript[currentText].name);
 
         typeText.fullText = dialogueData.talkScript[currentText++].text;
 

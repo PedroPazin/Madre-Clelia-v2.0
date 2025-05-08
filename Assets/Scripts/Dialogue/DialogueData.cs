@@ -5,7 +5,7 @@ using System.Collections.Generic;
 [Serializable]
 public struct Dialogue
 {
-    public string name;
+    public string name; 
     [TextArea(5, 10)]
     public string text;
 }

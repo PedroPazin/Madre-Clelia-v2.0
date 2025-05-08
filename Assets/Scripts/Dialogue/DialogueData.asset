@@ -13,13 +13,30 @@ MonoBehaviour:
   m_Name: DialogueData
   m_EditorClassIdentifier: 
   talkScript:
-  - name: Player
-    text: Ola
+  - name: PLAYER
+    text: "Oi, irm\xE3!"
   - name: Freira
-    text: Ola, pequeno garoto
-  - name: Player
-    text: ASDawdawdas
+    text: "Ol\xE1, meu anjo! Que bom te ver por aqui."
+  - name: PLAYER
+    text: "Quem \xE9 essa mo\xE7a da est\xE1tua?"
   - name: Freira
-    text: asdawdaga sdas wda
-  - name: Player
-    text: dasd was dawdaw f
+    text: "Essa \xE9 a Madre Cl\xE9lia Merloni. Ela foi uma mulher muito especial."
+  - name: PLAYER
+    text: O que ela fez?
+  - name: Freira
+    text: "Ela nasceu na It\xE1lia em 1861 e dedicou sua vida a ajudar os mais necessitados. "
+  - name: PLAYER
+    text: "Fundou a Congrega\xE7\xE3o das Ap\xF3stolas do Sagrado Cora\xE7\xE3o de
+      Jesus, que at\xE9 hoje realiza trabalhos de caridade em v\xE1rios pa\xEDses."
+  - name: PLAYER
+    text: "Uau! Ela parece incr\xEDvel."
+  - name: Freira
+    text: "Sim, foi uma mulher de muita f\xE9 e amor ao pr\xF3ximo."
+  - name: PLAYER
+    text: Quero saber mais sobre ela!
+  - name: Freira
+    text: "Que bom! Se voc\xEA quiser conhecer mais sobre a vida dela, pode me ajudar
+      a encontrar tr\xEAs objetos especiais que contam a hist\xF3ria dela. Topa o
+      desafio?"
+  - name: PLAYER
+    text: "Sim! Vamos l\xE1!"
