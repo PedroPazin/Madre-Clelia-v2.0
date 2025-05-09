@@ -25,7 +25,7 @@ MonoBehaviour:
     text: O que ela fez?
   - name: Freira
     text: "Ela nasceu na It\xE1lia em 1861 e dedicou sua vida a ajudar os mais necessitados. "
-  - name: PLAYER
+  - name: Freira
     text: "Fundou a Congrega\xE7\xE3o das Ap\xF3stolas do Sagrado Cora\xE7\xE3o de
       Jesus, que at\xE9 hoje realiza trabalhos de caridade em v\xE1rios pa\xEDses."
   - name: PLAYER
