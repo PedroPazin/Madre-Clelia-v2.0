@@ -73,6 +73,8 @@ public class DialogueSystem : MonoBehaviour
         state = STATE.TYPING;
     }
 
+    
+
     private void OnTypeFinished()
     {
        state = STATE.WAITING; 
