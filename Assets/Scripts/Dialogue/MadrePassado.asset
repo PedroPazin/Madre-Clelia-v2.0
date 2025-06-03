@@ -13,7 +13,21 @@ MonoBehaviour:
   m_Name: MadrePassado
   m_EditorClassIdentifier: 
   talkScript:
-  - name: PLAYER
-    text: AAAAAAAAAA
-  - name: MADRE
-    text: BBBBBBBBBB
+  - name: Madre
+    text: "Ol\xE1 minha crian\xE7a, estava esperando por voc\xEA."
+  - name: Player
+    text: "Ol\xE1, quem \xE9 voc\xEA?"
+  - name: Madre
+    text: "Pode me chamar de Madre Cl\xE9lia, sou a respons\xE1vel por cuidar deste
+      orfanato e zelar por todos que aqui vivem."
+  - name: Player
+    text: Que incrivel!!!
+  - name: Madre
+    text: "Soube que voc\xEA est\xE1 interessada em conhecer mais sobre a minha hist\xF3ria,
+      estou certa?"
+  - name: Player
+    text: Sim! Adoraria saber mais sobre a senhora, assim como a sua jornada vivendo
+      sobre os trilhos de Deus.
+  - name: Madre
+    text: "Que linda not\xEDcia. Est\xE1 vendo aquela altar ali na frente? Preciso
+      de sua ajuda para organiz\xE1-lo. Ele lhe dar\xE1 todas as respostas que procura."
