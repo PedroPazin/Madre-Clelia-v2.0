@@ -38,5 +38,5 @@ MonoBehaviour:
     text: "Que bom! Se voc\xEA quiser conhecer mais sobre a vida dela, pode me ajudar
       a encontrar tr\xEAs objetos especiais que contam a hist\xF3ria dela. Topa o
       desafio?"
-  - name: PLAYER
+  - name: player
     text: "Sim! Vamos l\xE1!"
