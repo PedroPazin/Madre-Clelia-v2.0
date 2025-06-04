@@ -1,0 +1,533 @@
+fileFormatVersion: 2
+guid: 9d56d2cf24ca8a949b202e008b330ec8
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7900588526512111129
+    second: andando-320_0
+  - first:
+      213: -8775333312587457065
+    second: andando-320_1
+  - first:
+      213: 742587619641918916
+    second: andando-320_2
+  - first:
+      213: -6969743798869054571
+    second: andando-320_3
+  - first:
+      213: 6251427013458361992
+    second: andando-320_4
+  - first:
+      213: -2460747196609235042
+    second: andando-320_5
+  - first:
+      213: -2853691784699143092
+    second: andando-320_6
+  - first:
+      213: 5567927361161790732
+    second: andando-320_7
+  - first:
+      213: 6999644931349378068
+    second: andando-320_8
+  - first:
+      213: 1639977842228443510
+    second: andando-320_9
+  - first:
+      213: -2806522235424092974
+    second: andando-320_10
+  - first:
+      213: -1841571932212101249
+    second: andando-320_11
+  - first:
+      213: 8848887590494847301
+    second: andando-320_12
+  - first:
+      213: -5527211390835188682
+    second: andando-320_13
+  - first:
+      213: 3218375379393289879
+    second: andando-320_14
+  - first:
+      213: -5753732225175045193
+    second: andando-320_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 320
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: andando-320_0
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 1044
+        width: 162
+        height: 282
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e108b028987b5290800000000000000
+      internalID: -7900588526512111129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: andando-320_1
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 1044
+        width: 167
+        height: 282
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7dd929d88d0c73680800000000000000
+      internalID: -8775333312587457065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: andando-320_2
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 1044
+        width: 162
+        height: 282
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c50c5371833e4a00800000000000000
+      internalID: 742587619641918916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: andando-320_3
+      rect:
+        serializedVersion: 2
+        x: 659
+        y: 1044
+        width: 167
+        height: 282
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59bade431fe764f90800000000000000
+      internalID: -6969743798869054571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: andando-320_4
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 714
+        width: 167
+        height: 282
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88e777c4fb781c650800000000000000
+      internalID: 6251427013458361992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: andando-320_5
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 714
+        width: 167
+        height: 282
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e977118567ba9ddd0800000000000000
+      internalID: -2460747196609235042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: andando-320_6
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 714
+        width: 167
+        height: 282
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4c9e8af076a568d0800000000000000
+      internalID: -2853691784699143092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: andando-320_7
+      rect:
+        serializedVersion: 2
+        x: 674
+        y: 709
+        width: 167
+        height: 282
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c050a315f60454d40800000000000000
+      internalID: 5567927361161790732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: andando-320_8
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 389
+        width: 167
+        height: 282
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41471f6bafbb32160800000000000000
+      internalID: 6999644931349378068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: andando-320_9
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 394
+        width: 167
+        height: 282
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 679b985982f52c610800000000000000
+      internalID: 1639977842228443510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: andando-320_10
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 394
+        width: 167
+        height: 282
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2dccf4f75ea3d09d0800000000000000
+      internalID: -2806522235424092974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: andando-320_11
+      rect:
+        serializedVersion: 2
+        x: 674
+        y: 394
+        width: 167
+        height: 282
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7ffa20b51c6176e0800000000000000
+      internalID: -1841571932212101249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: andando-320_12
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 59
+        width: 162
+        height: 282
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 541cec051609dca70800000000000000
+      internalID: 8848887590494847301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: andando-320_13
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 59
+        width: 162
+        height: 282
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63c96c246866b43b0800000000000000
+      internalID: -5527211390835188682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: andando-320_14
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 59
+        width: 162
+        height: 282
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79e999a1b57f9ac20800000000000000
+      internalID: 3218375379393289879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: andando-320_15
+      rect:
+        serializedVersion: 2
+        x: 689
+        y: 59
+        width: 162
+        height: 282
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7bb39b99603a620b0800000000000000
+      internalID: -5753732225175045193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      andando-320_0: -7900588526512111129
+      andando-320_1: -8775333312587457065
+      andando-320_10: -2806522235424092974
+      andando-320_11: -1841571932212101249
+      andando-320_12: 8848887590494847301
+      andando-320_13: -5527211390835188682
+      andando-320_14: 3218375379393289879
+      andando-320_15: -5753732225175045193
+      andando-320_2: 742587619641918916
+      andando-320_3: -6969743798869054571
+      andando-320_4: 6251427013458361992
+      andando-320_5: -2460747196609235042
+      andando-320_6: -2853691784699143092
+      andando-320_7: 5567927361161790732
+      andando-320_8: 6999644931349378068
+      andando-320_9: 1639977842228443510
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

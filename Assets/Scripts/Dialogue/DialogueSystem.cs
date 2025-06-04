@@ -36,11 +36,25 @@ public class DialogueSystem : MonoBehaviour
     void Start()
     {
         state = STATE.DISABLED;
+
     }
 
     // Update is called once per frame
     void Update()
     {
+        // Spawn de objects
+        if (ObjectManager.instance.objects.Length != 0)
+        {
+            if (finished)
+            {
+                foreach (GameObject obj in ObjectManager.instance.objects)
+                {
+                    obj.SetActive(true);
+                }
+
+            }
+        }
+
         if (state == STATE.DISABLED) return;
 
         switch(state) 
@@ -72,6 +86,8 @@ public class DialogueSystem : MonoBehaviour
         typeText.StartTyping();
         state = STATE.TYPING;
     }
+
+    
 
     private void OnTypeFinished()
     {
