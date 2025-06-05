@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 9a603036a1429af4a921cd7883005060
+guid: f4bc57f8f5218094ca867185d9364ff6
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3810008232904644474
-    second: clelia-64_0
+      213: 7944191392598771
+    second: madreimagem_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: clelia-64_0
+      name: madreimagem_0
       rect:
         serializedVersion: 2
-        x: 16
+        x: 0
         y: 0
-        width: 31
-        height: 61
+        width: 984
+        height: 1420
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 688a76ec2b1202bc0800000000000000
-      internalID: -3810008232904644474
+      spriteID: 3facbf133393c1000800000000000000
+      internalID: 7944191392598771
       vertices: []
       indices: 
       edges: []
@@ -134,8 +134,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      clelia-64_0: -3810008232904644474
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

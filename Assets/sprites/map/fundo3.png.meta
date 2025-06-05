@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 9a603036a1429af4a921cd7883005060
+guid: d82108f6666e29749b2af9253647cc10
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3810008232904644474
-    second: clelia-64_0
+      213: -3970269260143173433
+    second: fundo3_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: clelia-64_0
+      name: fundo3_0
       rect:
         serializedVersion: 2
-        x: 16
+        x: 0
         y: 0
-        width: 31
-        height: 61
+        width: 480
+        height: 270
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 688a76ec2b1202bc0800000000000000
-      internalID: -3810008232904644474
+      spriteID: 7c0638ea425c6e8c0800000000000000
+      internalID: -3970269260143173433
       vertices: []
       indices: 
       edges: []
@@ -134,8 +134,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      clelia-64_0: -3810008232904644474
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

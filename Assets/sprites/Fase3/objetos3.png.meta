@@ -1,28 +1,19 @@
 fileFormatVersion: 2
-guid: d1ef0be56024bca4096bab1ba3f632e0
+guid: 398befb570b47384687fa66cd6c25616
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2428943581214800525
-    second: objetospuzzle2_0
+      213: -3097037665482935029
+    second: objetos3_0
   - first:
-      213: 3273763528559138217
-    second: objetospuzzle2_1
+      213: 6827578037456516772
+    second: objetos3_1
   - first:
-      213: -7782106867386963762
-    second: objetospuzzle2_2
+      213: -7216623257621978514
+    second: objetos3_2
   - first:
-      213: 7076069010836172517
-    second: objetospuzzle2_3
-  - first:
-      213: -1880242546574117457
-    second: objetospuzzle2_4
-  - first:
-      213: 4661935878445035507
-    second: objetospuzzle2_5
-  - first:
-      213: -1658237933208974389
-    second: objetospuzzle2_6
+      213: -429752421190153022
+    second: objetos3_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -118,13 +109,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: objetospuzzle2_0
+      name: objetos3_0
       rect:
         serializedVersion: 2
-        x: 8
-        y: 139
-        width: 79
-        height: 119
+        x: 25
+        y: 99
+        width: 48
+        height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -133,20 +124,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d8af5c9615755b120800000000000000
-      internalID: 2428943581214800525
+      spriteID: b0572ece6ac1505d0800000000000000
+      internalID: -3097037665482935029
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: objetospuzzle2_1
+      name: objetos3_1
       rect:
         serializedVersion: 2
-        x: 98
-        y: 107
-        width: 108
-        height: 148
+        x: 117
+        y: 109
+        width: 91
+        height: 45
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -155,20 +146,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9a59566859ebe6d20800000000000000
-      internalID: 3273763528559138217
+      spriteID: 4a6bade0d0e60ce50800000000000000
+      internalID: 6827578037456516772
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: objetospuzzle2_2
+      name: objetos3_2
       rect:
         serializedVersion: 2
-        x: 182
-        y: 125
-        width: 77
-        height: 55
+        x: 308
+        y: 101
+        width: 46
+        height: 58
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -177,20 +168,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ec8a5451907600490800000000000000
-      internalID: -7782106867386963762
+      spriteID: e62ae9be16769db90800000000000000
+      internalID: -7216623257621978514
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: objetospuzzle2_3
+      name: objetos3_3
       rect:
         serializedVersion: 2
-        x: 262
-        y: 105
-        width: 74
-        height: 164
+        x: 23
+        y: 21
+        width: 380
+        height: 43
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -199,74 +190,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5ee2a05564f333260800000000000000
-      internalID: 7076069010836172517
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: objetospuzzle2_4
-      rect:
-        serializedVersion: 2
-        x: 365
-        y: 80
-        width: 84
-        height: 179
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: fa5bfd7ad5908e5e0800000000000000
-      internalID: -1880242546574117457
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: objetospuzzle2_5
-      rect:
-        serializedVersion: 2
-        x: 8
-        y: 7
-        width: 42
-        height: 102
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3ff6d504bf582b040800000000000000
-      internalID: 4661935878445035507
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: objetospuzzle2_6
-      rect:
-        serializedVersion: 2
-        x: 58
-        y: 6
-        width: 42
-        height: 102
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: bcb400ea261ccf8e0800000000000000
-      internalID: -1658237933208974389
+      spriteID: 2ccc8992376390af0800000000000000
+      internalID: -429752421190153022
       vertices: []
       indices: 
       edges: []
@@ -284,14 +209,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      objetospuzzle2_0: 2428943581214800525
-      objetospuzzle2_1: 3273763528559138217
-      objetospuzzle2_2: -7782106867386963762
-      objetospuzzle2_3: 7076069010836172517
-      objetospuzzle2_4: -1880242546574117457
-      objetospuzzle2_5: 4661935878445035507
-      objetospuzzle2_6: -1658237933208974389
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

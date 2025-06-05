@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      clelia-640_0: 786800832192416108
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
