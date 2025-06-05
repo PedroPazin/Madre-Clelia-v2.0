@@ -43,5 +43,23 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Cenario
+    uniqueID: 3866023805
+    locked: 0
+  - name: Walk
+    uniqueID: 3585428047
+    locked: 0
+  - name: Colision
+    uniqueID: 2234347443
+    locked: 0
+  - name: Player
+    uniqueID: 395216051
+    locked: 0
+  - name: WalkBehind
+    uniqueID: 443983257
+    locked: 0
+  - name: Decor
+    uniqueID: 3478022895
+    locked: 0
   m_RenderingLayers:
   - Default
