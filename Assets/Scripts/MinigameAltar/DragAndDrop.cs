@@ -7,12 +7,13 @@ public class DragAndDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler
 
     [SerializeField] private Canvas _canvas;
     [SerializeField] private CanvasGroup _canvasGroup;
+
     public void OnPointerDown(PointerEventData eventData)
     {
         Debug.Log("Apertou");
     }
 
-   //inicia o arrasto
+    //inicia o arrasto
     public void OnBeginDrag(PointerEventData eventData)
     {
         _canvasGroup.alpha = 0.5f;
@@ -31,5 +32,6 @@ public class DragAndDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler
     {
         _transform.anchoredPosition += eventData.delta / _canvas.scaleFactor;
     }
+
 }
 
