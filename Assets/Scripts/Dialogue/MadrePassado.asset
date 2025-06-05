@@ -29,5 +29,23 @@ MonoBehaviour:
     text: Sim! Adoraria saber mais sobre a senhora, assim como a sua jornada vivendo
       sobre os trilhos de Deus.
   - name: Madre
-    text: "Que linda not\xEDcia. Est\xE1 vendo aquela altar ali na frente? Preciso
-      de sua ajuda para organiz\xE1-lo. Ele lhe dar\xE1 todas as respostas que procura."
+    text: "Que linda not\xEDcia. Est\xE1 vendo aquele altar ali na frente? Preciso
+      de sua ajuda para organiz\xE1-lo. Nele h\xE1 itens de extrema import\xE2ncia
+      para nossas ora\xE7\xF5es."
+  - name: Player
+    text: "E quais itens s\xE3o esses?"
+  - name: Madre
+    text: "Uma imagem da Santa Virgem Maria, m\xE3e de Jesus Cristo e nossa intercessora."
+  - name: Madre
+    text: "Um tercinho para prestarmos de forma correta nossas ora\xE7\xF5es. "
+  - name: Madre
+    text: "Duas velas para iluminar nossas preces e nos auxiliar na escurid\xE3o
+      da noite."
+  - name: Madre
+    text: "E claro, a B\xEDblia Sagrada, que nos mostra os ensinamentos de Deus e
+      nos ajuda a diferenciarmos o bem do mal."
+  - name: Player
+    text: 'Uau! Quantas preciosidades! '
+  - name: Madre
+    text: "Me sinto honrada em poder ajudar a senhora em uma tarefa t\xE3o importante
+      quanto esta! Vamos l\xE1!!!"
