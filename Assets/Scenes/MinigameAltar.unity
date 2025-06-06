@@ -211,6 +211,7 @@ MonoBehaviour:
   _transform: {fileID: 7672387}
   _canvas: {fileID: 1095799134}
   _canvasGroup: {fileID: 7672391}
+  objects: []
 --- !u!225 &7672391
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -436,6 +437,7 @@ MonoBehaviour:
   _transform: {fileID: 154215492}
   _canvas: {fileID: 1095799134}
   _canvasGroup: {fileID: 154215496}
+  objects: []
 --- !u!225 &154215496
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -486,7 +488,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1081, y: 511}
+  m_SizeDelta: {x: 1081, y: 523}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &188138328
 MonoBehaviour:
@@ -618,6 +620,7 @@ MonoBehaviour:
   _transform: {fileID: 270034316}
   _canvas: {fileID: 1095799134}
   _canvasGroup: {fileID: 270034320}
+  objects: []
 --- !u!225 &270034320
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -1025,6 +1028,7 @@ MonoBehaviour:
   _transform: {fileID: 635377784}
   _canvas: {fileID: 1095799134}
   _canvasGroup: {fileID: 635377787}
+  objects: []
 --- !u!1 &647804715
 GameObject:
   m_ObjectHideFlags: 0
@@ -1295,6 +1299,7 @@ MonoBehaviour:
   _transform: {fileID: 0}
   _canvas: {fileID: 0}
   _canvasGroup: {fileID: 0}
+  objects: []
 --- !u!1 &1286516420
 GameObject:
   m_ObjectHideFlags: 0
@@ -1387,6 +1392,7 @@ MonoBehaviour:
   _transform: {fileID: 1286516421}
   _canvas: {fileID: 1095799134}
   _canvasGroup: {fileID: 1286516425}
+  objects: []
 --- !u!225 &1286516425
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -1653,6 +1659,7 @@ MonoBehaviour:
   _transform: {fileID: 1442894566}
   _canvas: {fileID: 1095799134}
   _canvasGroup: {fileID: 1442894569}
+  objects: []
 --- !u!1 &1514041181
 GameObject:
   m_ObjectHideFlags: 0
@@ -1745,6 +1752,7 @@ MonoBehaviour:
   _transform: {fileID: 1514041182}
   _canvas: {fileID: 1095799134}
   _canvasGroup: {fileID: 1514041186}
+  objects: []
 --- !u!225 &1514041186
 CanvasGroup:
   m_ObjectHideFlags: 0
