@@ -1,3 +1,4 @@
+using System.Collections;
 using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -8,6 +9,9 @@ public class MainMenu : MonoBehaviour
     public GameObject chooseNameOption;
     public GameObject menuOptions;
     public TMP_InputField inputField;
+
+    public GameObject[] buttons;
+    public GameObject[] buttonsName;
 
     public void Start()
     {
@@ -22,8 +26,7 @@ public class MainMenu : MonoBehaviour
         {
             if (Input.GetKeyDown("escape"))
             {
-                chooseNameOption.SetActive(false);
-                menuOptions.SetActive(true);
+                StartCoroutine(FadeInButtons());
             }
 
             if (Input.GetKeyDown(KeyCode.Return))
@@ -31,6 +34,16 @@ public class MainMenu : MonoBehaviour
                 PlayGame();
             }
         }
+    }
+    public IEnumerator FadeInButtons()
+    {
+        foreach (GameObject btn in buttonsName)
+        {
+            btn.GetComponent<FadeIn>().FadeOutY();
+        }
+        yield return new WaitForSeconds(0.8f);
+        chooseNameOption.SetActive(false);
+        menuOptions.SetActive(true);
     }
 
     public void PlayGame()
@@ -41,6 +54,16 @@ public class MainMenu : MonoBehaviour
 
     public void ChooseName()
     {
+        StartCoroutine(FadeOutButtons());
+    }
+
+    public IEnumerator FadeOutButtons()
+    {
+        foreach (GameObject btn in buttons)
+        {
+            btn.GetComponent<FadeIn>().FadeOutX();
+        }
+        yield return new WaitForSeconds(0.8f);
         chooseNameOption.SetActive(true);
         menuOptions.SetActive(false);
     }

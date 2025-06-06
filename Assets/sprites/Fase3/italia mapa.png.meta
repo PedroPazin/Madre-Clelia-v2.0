@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      italia mapa_0: -1423260700951879009
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
