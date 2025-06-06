@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 411f8ffb19f4ab9478cba0d40c7409b2
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - dialogueSystem: {instanceID: 0}
+  - intro3: {instanceID: 0}
+  - final3: {instanceID: 0}
+  - painelMemoria: {instanceID: 0}
+  - memoriaManager: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -10,10 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6b2baa86b52bbe640bcfb52c3af1be5f, type: 3}
-  m_Name: DialogoScene3
+  m_Name: Intro3
   m_EditorClassIdentifier: 
   talkScript:
   - name: Freira
-    text: "Ol\xE1 pequena! Como foi sua visita?"
+    text: "Bem-vindo \xE0 capela... Aqui est\xE1 o museu de Madre Cl\xE9lia."
   - name: player
-    text: "Foi t\xE3o maravilhoso! Mas onde estamos agora?"
+    text: "Aqui \xE9 t\xE3o grande e tem tantos objetos! Gostaria muito de saber
+      mais sobre tudo!"
+  - name: Freira
+    text: "Te contarei tudo, mas estou com um probleminha... de mem\xF3ria. Hehe!"
+  - name: Freira
+    text: "Talvez, se voc\xEA me ajudar a lembrar, as coisas voltem ao lugar..."

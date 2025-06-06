@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b2baa86b52bbe640bcfb52c3af1be5f, type: 3}
+  m_Name: Final3
+  m_EditorClassIdentifier: 
+  talkScript:
+  - name: Freira
+    text: Muito bem! Agora me lembro de tudo... Que legado lindo ela deixou!
+  - name: player
+    text: Ela fez tanto bem e tantas coisas! Quero ser como ela!
+  - name: Freira
+    text: "Ah querida! Isso \xE9 f\xE1cil!"
+  - name: player
+    text: "S\xE9rio Irm\xE3? O que preciso fazer?"
+  - name: Freira
+    text: "Apenas n\xE3o se esquecer que com amor, coragem e f\xE9, podemos transformar
+      o mundo."
