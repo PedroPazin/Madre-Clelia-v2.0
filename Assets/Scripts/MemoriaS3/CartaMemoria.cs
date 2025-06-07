@@ -28,11 +28,21 @@ public class CartaMemoria : MonoBehaviour
         revelada = true;
         verso.SetActive(false);
         manager.CartaVirada(this);
+        imagemFrente.gameObject.SetActive(true);
     }
 
     public void Resetar()
     {
         revelada = false;
         verso.SetActive(true);
+        imagemFrente.gameObject.SetActive(false);
     }
+
+    public void FixarComoRevelada()
+{
+    revelada = true;
+    verso.SetActive(false);
+    imagemFrente.gameObject.SetActive(true);
+}
+
 }

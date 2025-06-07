@@ -22,6 +22,8 @@ public class MemoriaManager : MonoBehaviour
 
     [Header("Popup de Descrição")]
     public GameObject painelPopup;
+
+    public GameObject painelMemoria;
     public Image popupImagem;
     public TMP_Text popupTexto;
 
@@ -33,11 +35,10 @@ public class MemoriaManager : MonoBehaviour
     private List<GameObject> cartasInstanciadas = new List<GameObject>();
     private CartaMemoria primeiraCarta = null;
     private int paresEncontrados = 0;
+    private bool bloqueandoClique = false;
 
     public void IniciarJogo()
     {
-        primeiraCarta = null;
-        paresEncontrados = 0;
 
         LimparCartas();
 
@@ -55,40 +56,63 @@ public class MemoriaManager : MonoBehaviour
     }
 
     public void CartaVirada(CartaMemoria carta)
+{
+    if (bloqueandoClique || carta == primeiraCarta) return;
+
+    if (primeiraCarta == null)
     {
-        if (primeiraCarta == null)
+        primeiraCarta = carta;
+    }
+    else
+    {
+        bloqueandoClique = true;
+
+        // Verifica se as cartas são iguais
+        if (primeiraCarta.idObjeto == carta.idObjeto)
         {
-            primeiraCarta = carta;
+            MostrarPopup(carta);
+            AtivarObjetoNaCena(carta.idObjeto);
+
+            // Garante que ambas fiquem reveladas
+            carta.FixarComoRevelada();
+            primeiraCarta.FixarComoRevelada();
+
+            primeiraCarta = null;
+            bloqueandoClique = false;
+            paresEncontrados++;
+
+            if (paresEncontrados == pares.Count)
+            {
+                StartCoroutine(EncerrarMinigame());
+            }
         }
         else
         {
-            if (primeiraCarta.idObjeto == carta.idObjeto)
-            {
-                MostrarPopup(carta);
-                AtivarObjetoNaCena(carta.idObjeto);
-                primeiraCarta = null;
-                paresEncontrados++;
-
-                if (paresEncontrados == pares.Count)
-                {
-                    painelPopup.SetActive(false);
-                    irmaDialogo.IniciarDialogoFinal();
-                }
-            }
-            else
-            {
-                StartCoroutine(ResetarCartas(carta, primeiraCarta));
-                primeiraCarta = null;
-            }
+            StartCoroutine(ResetarCartasComDelay(carta, primeiraCarta));
         }
     }
+}
+    IEnumerator ResetarCartasComDelay(CartaMemoria cartaA, CartaMemoria cartaB)
+{
+    yield return new WaitForSeconds(1f);
 
-    IEnumerator ResetarCartas(CartaMemoria cartaA, CartaMemoria cartaB)
+    cartaA.Resetar();
+    cartaB.Resetar();
+
+    primeiraCarta = null;
+    bloqueandoClique = false;
+}
+
+    IEnumerator EncerrarMinigame()
     {
-        yield return new WaitForSeconds(1f);
-        cartaA.Resetar();
-        cartaB.Resetar();
+        yield return new WaitForSeconds(0.5f); // pequena pausa antes de fechar
+        painelPopup.SetActive(false);
+        yield return new WaitForSeconds(0.2f);
+        painelMemoria.SetActive(false);
+        irmaDialogo.IniciarDialogoFinal();
+
     }
+
 
     void MostrarPopup(CartaMemoria carta)
     {

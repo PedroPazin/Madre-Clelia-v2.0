@@ -16,36 +16,43 @@ public class NPC : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        _player = GameObject.FindGameObjectWithTag("player");        
+        _player = GameObject.FindGameObjectWithTag("player");
         interactionText.SetActive(false);
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(_player != null)
+        if (_player != null)
         {
             GetDistance();
-        }  
+        }
 
-        if(_canInteract && _interacted)
+        if (_canInteract && _interacted)
         {
             interactionText.SetActive(false);
             Destroy(gameObject);
-        }      
-        
+        }
+
     }
 
     private void GetDistance()
     {
         float dist = Vector2.Distance(transform.position, _player.transform.position);
         _canInteract = dist <= 1.75f;
-        if(_canInteract)
+        if (_canInteract)
         {
             interactionText.SetActive(true);
-            if(Input.GetKeyDown("e"))
+            if (Input.GetKeyDown("e"))
             {
-                dialogueSystem.Next();
+                if (irmaDialogo != null)
+                {
+                    irmaDialogo.IniciarDialogoInicial(); // Fase 3
+                }
+                else
+                {
+                    dialogueSystem.Next(); // Outras fases
+                }
             }
         }
         else
@@ -53,5 +60,7 @@ public class NPC : MonoBehaviour
             interactionText.SetActive(false);
         }
     }
+
+    public IrmaDialogo irmaDialogo;
 
 }

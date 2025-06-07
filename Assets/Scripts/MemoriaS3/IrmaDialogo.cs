@@ -12,14 +12,9 @@ public class IrmaDialogo : MonoBehaviour
     private bool esperandoMinigame = false;
 
 
-    public void IniciarDireto()
-    {
-        Debug.Log("Iniciar Direto OK");
-        painelMemoria.SetActive(true);
-        memoriaManager.IniciarJogo();
-    }
     public void IniciarDialogoInicial()
     {
+        Debug.Log("Dialogo começou");
         esperandoMinigame = true;
         dialogueSystem.dialogueData = intro3;
 
@@ -55,4 +50,5 @@ public class IrmaDialogo : MonoBehaviour
         dialogueSystem.dialogueData = final3;
         dialogueSystem.Next();
     }
+
 }
