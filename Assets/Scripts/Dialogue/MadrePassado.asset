@@ -15,24 +15,24 @@ MonoBehaviour:
   talkScript:
   - name: Madre
     text: "Ol\xE1 minha crian\xE7a, estava esperando por voc\xEA."
-  - name: Player
+  - name: PLAYER
     text: "Ol\xE1, quem \xE9 voc\xEA?"
   - name: Madre
     text: "Pode me chamar de Madre Cl\xE9lia, sou a respons\xE1vel por cuidar deste
       orfanato e zelar por todos que aqui vivem."
-  - name: Player
+  - name: PLAYER
     text: Que incrivel!!!
   - name: Madre
     text: "Soube que voc\xEA est\xE1 interessada em conhecer mais sobre a minha hist\xF3ria,
       estou certa?"
-  - name: Player
+  - name: PLAYER
     text: Sim! Adoraria saber mais sobre a senhora, assim como a sua jornada vivendo
       sobre os trilhos de Deus.
   - name: Madre
     text: "Que linda not\xEDcia. Est\xE1 vendo aquele altar ali na frente? Preciso
       de sua ajuda para organiz\xE1-lo. Nele h\xE1 itens de extrema import\xE2ncia
       para nossas ora\xE7\xF5es."
-  - name: Player
+  - name: PLAYER
     text: "E quais itens s\xE3o esses?"
   - name: Madre
     text: "Uma imagem da Santa Virgem Maria, m\xE3e de Jesus Cristo e nossa intercessora."
@@ -44,8 +44,8 @@ MonoBehaviour:
   - name: Madre
     text: "E claro, a B\xEDblia Sagrada, que nos mostra os ensinamentos de Deus e
       nos ajuda a diferenciarmos o bem do mal."
-  - name: Player
+  - name: PLAYER
     text: 'Uau! Quantas preciosidades! '
-  - name: Madre
+  - name: PLAYER
     text: "Me sinto honrada em poder ajudar a senhora em uma tarefa t\xE3o importante
       quanto esta! Vamos l\xE1!!!"

@@ -4,23 +4,14 @@ using UnityEngine.SceneManagement;
 
 public class LoadScenes : MonoBehaviour
 {
-    public void loadScene(string nome)
+    public void loadScene()
     {
-        SceneManager.LoadScene(nome);
-    }
-    private Animator _transitionAnim;
-    
-    public void NextLevel()
-    {
-        StartCoroutine(LoadLevel());
+        NextLevel();
     }
 
-    IEnumerator LoadLevel()
+    private void NextLevel()
     {
-        _transitionAnim.SetTrigger("End");
-        yield return new WaitForSeconds(1);
-        SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex + 1);
-        _transitionAnim.SetTrigger("Start");
+        SceneController.instance.NextLevel();
     }
 
 }

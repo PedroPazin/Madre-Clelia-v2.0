@@ -15,11 +15,11 @@ MonoBehaviour:
   talkScript:
   - name: Freira
     text: Muito bem! Agora me lembro de tudo... Que legado lindo ela deixou!
-  - name: player
+  - name: PLAYER
     text: Ela fez tanto bem e tantas coisas! Quero ser como ela!
   - name: Freira
     text: "Ah querida! Isso \xE9 f\xE1cil!"
-  - name: player
+  - name: PLAYER
     text: "S\xE9rio Irm\xE3? O que preciso fazer?"
   - name: Freira
     text: "Apenas n\xE3o se esquecer que com amor, coragem e f\xE9, podemos transformar

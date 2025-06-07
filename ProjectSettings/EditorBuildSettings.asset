@@ -15,11 +15,11 @@ EditorBuildSettings:
     path: Assets/Scenes/Fase 2.unity
     guid: 3939f16c72048394b8b1680109d2b0b1
   - enabled: 1
-    path: Assets/Scenes/Fase 3.unity
-    guid: 00da63de1d28c25439c42583d92db878
-  - enabled: 1
     path: Assets/Scenes/MinigameAltar.unity
     guid: 3810771e1f87b694c884a3b00c232584
+  - enabled: 1
+    path: Assets/Scenes/Fase 3.unity
+    guid: 00da63de1d28c25439c42583d92db878
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

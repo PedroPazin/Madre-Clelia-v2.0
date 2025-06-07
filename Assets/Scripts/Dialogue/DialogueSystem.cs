@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public enum STATE 
 {
@@ -54,7 +55,7 @@ public class DialogueSystem : MonoBehaviour
         // Spawn de objects
         if (ObjectManager.instance.objects.Length != 0)
         {
-            if (finished)
+            if (finished && SceneManager.GetActiveScene().buildIndex == 1)
             {
                 foreach (GameObject obj in ObjectManager.instance.objects)
                 {

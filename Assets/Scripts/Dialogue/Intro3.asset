@@ -15,7 +15,7 @@ MonoBehaviour:
   talkScript:
   - name: Freira
     text: "Bem-vindo \xE0 capela... Aqui est\xE1 o museu de Madre Cl\xE9lia."
-  - name: player
+  - name: PLAYER
     text: "Aqui \xE9 t\xE3o grande e tem tantos objetos! Gostaria muito de saber
       mais sobre tudo!"
   - name: Freira

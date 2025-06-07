@@ -1255,6 +1255,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _transitionAnim: {fileID: 1164184511}
+  transitionCanvas: {fileID: 1241092265}
 --- !u!1 &246972272
 GameObject:
   m_ObjectHideFlags: 0
@@ -5137,6 +5138,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactionText: {fileID: 937288474}
+  irmaDialogo: {fileID: 0}
 --- !u!212 &721934969
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7551,6 +7553,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueData: {fileID: 11400000, guid: 7e3ab8103aa4481419b4f792d3700a83, type: 2}
+  dialogueUI: {fileID: 0}
   state: 0
 --- !u!1 &1617215746
 GameObject:

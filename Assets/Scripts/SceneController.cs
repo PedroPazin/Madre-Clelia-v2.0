@@ -8,14 +8,17 @@ public class SceneController : MonoBehaviour
     [SerializeField]
     private Animator _transitionAnim;
 
+    public GameObject transitionCanvas;
+
     private void Awake()
     {
+        transitionCanvas.SetActive(false);
         if (instance == null)
         {
             instance = this;
             DontDestroyOnLoad(gameObject);
         }
-        else 
+        else
         {
             Destroy(gameObject);
         }
@@ -28,9 +31,11 @@ public class SceneController : MonoBehaviour
 
     IEnumerator LoadLevel()
     {
+        transitionCanvas.SetActive(true);
         _transitionAnim.SetTrigger("End");
         yield return new WaitForSeconds(1);
         SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex + 1);
         _transitionAnim.SetTrigger("Start");
+        transitionCanvas.SetActive(false);
     }
 }
