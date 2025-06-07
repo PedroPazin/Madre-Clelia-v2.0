@@ -11,6 +11,8 @@ public class PlaterMovement : MonoBehaviour
     private Animator anim;
     private SpriteRenderer sprite;
 
+    // Pause Menu
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -22,6 +24,11 @@ public class PlaterMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
+        if (PauseMenu.instance.isPaused)
+        {
+            return;
+        }
+
         Vector2 direction = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
         _rb.linearVelocity = direction.normalized * speed;
 

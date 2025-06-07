@@ -22,7 +22,7 @@ public class DialogueSystem : MonoBehaviour
     TypeTextAnimation typeText;
     DialogueUI dialogueUI;
 
-    STATE state;
+    public STATE state;
 
     void Awake()
     {

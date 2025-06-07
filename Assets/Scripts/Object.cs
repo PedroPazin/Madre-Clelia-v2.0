@@ -25,6 +25,11 @@ public class Object : MonoBehaviour
     {
         if(_player != null)
         {
+            if (PauseMenu.instance.isPaused)
+            {
+                return;
+            }
+
             GetDistance();
         }  
 
@@ -57,7 +62,9 @@ public class Object : MonoBehaviour
     public IEnumerator Interact()
     {
         info.SetActive(true);
+        PauseMenu.instance.canPause = false;
         yield return new WaitUntil(() => Input.GetKeyDown("escape"));
+        PauseMenu.instance.canPause = true;
         info.SetActive(false);
         _interacted = true;
     }

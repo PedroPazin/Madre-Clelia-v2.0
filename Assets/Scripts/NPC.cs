@@ -25,6 +25,10 @@ public class NPC : MonoBehaviour
     {
         if(_player != null)
         {
+            if (PauseMenu.instance.isPaused)
+            {
+                return;
+            }
             GetDistance();
         }  
 
@@ -40,7 +44,7 @@ public class NPC : MonoBehaviour
     {
         float dist = Vector2.Distance(transform.position, _player.transform.position);
         _canInteract = dist <= 1.75f;
-        if(_canInteract)
+        if(_canInteract && dialogueSystem.state == STATE.DISABLED)
         {
             interactionText.SetActive(true);
             if(Input.GetKeyDown("e"))

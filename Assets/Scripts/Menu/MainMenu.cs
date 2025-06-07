@@ -41,7 +41,7 @@ public class MainMenu : MonoBehaviour
         {
             btn.GetComponent<FadeIn>().FadeOutY();
         }
-        yield return new WaitForSeconds(0.8f);
+        yield return new WaitForSeconds(1f);
         chooseNameOption.SetActive(false);
         menuOptions.SetActive(true);
     }
@@ -63,7 +63,7 @@ public class MainMenu : MonoBehaviour
         {
             btn.GetComponent<FadeIn>().FadeOutX();
         }
-        yield return new WaitForSeconds(0.8f);
+        yield return new WaitForSeconds(1f);
         chooseNameOption.SetActive(true);
         menuOptions.SetActive(false);
     }
