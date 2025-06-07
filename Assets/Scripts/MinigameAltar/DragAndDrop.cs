@@ -1,37 +1,38 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class DragAndDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, IEndDragHandler, IDragHandler
+public class DragAndDrop : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
 {
-    [SerializeField] private RectTransform _transform;
+    private Vector3 startPosition;
+    private Transform parentToReturnTo;
+    private CanvasGroup canvasGroup;
 
-    [SerializeField] private Canvas _canvas;
-    [SerializeField] private CanvasGroup _canvasGroup;
-
-    public void OnPointerDown(PointerEventData eventData)
+    public string correctTargetTag;
+    void Awake()
     {
-        Debug.Log("Apertou");
+        canvasGroup = GetComponent<CanvasGroup>();
     }
 
-    //inicia o arrasto
     public void OnBeginDrag(PointerEventData eventData)
     {
-        _canvasGroup.alpha = 0.5f;
-        _canvasGroup.blocksRaycasts = false;
-
-    }
-
-    //finaliza o arrasto
-    public void OnEndDrag(PointerEventData eventData)
-    {
-        _canvasGroup.alpha = 1f;
-        _canvasGroup.blocksRaycasts = true;
+        startPosition = transform.position;
+        parentToReturnTo = transform.parent;
+        canvasGroup.blocksRaycasts = false;
     }
 
     public void OnDrag(PointerEventData eventData)
     {
-        _transform.anchoredPosition += eventData.delta / _canvas.scaleFactor;
+        transform.position = eventData.position;
     }
 
-}
+    public void OnEndDrag(PointerEventData eventData)
+    {
+        canvasGroup.blocksRaycasts = true;
 
+        // Se não foi colocado no lugar certo, volta ao início
+        if (transform.parent == parentToReturnTo)
+        {
+            transform.position = startPosition;
+        }
+    }
+}

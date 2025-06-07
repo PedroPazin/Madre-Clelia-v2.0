@@ -1,19 +1,10 @@
 fileFormatVersion: 2
-guid: 398befb570b47384687fa66cd6c25616
+guid: d5f99cfaa537ea740b4b1f8953794fad
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3097037665482935029
-    second: objetos3_0
-  - first:
-      213: 6827578037456516772
-    second: objetos3_1
-  - first:
-      213: -7216623257621978514
-    second: objetos3_2
-  - first:
-      213: -429752421190153022
-    second: objetos3_3
+      213: 7453518613944443011
+    second: Verso_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -60,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 64
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -109,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: objetos3_0
+      name: Verso_0
       rect:
         serializedVersion: 2
-        x: 25
-        y: 99
-        width: 48
-        height: 42
+        x: 0
+        y: 0
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,74 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b0572ece6ac1505d0800000000000000
-      internalID: -3097037665482935029
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: objetos3_1
-      rect:
-        serializedVersion: 2
-        x: 117
-        y: 109
-        width: 91
-        height: 45
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4a6bade0d0e60ce50800000000000000
-      internalID: 6827578037456516772
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: objetos3_2
-      rect:
-        serializedVersion: 2
-        x: 308
-        y: 101
-        width: 46
-        height: 58
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e62ae9be16769db90800000000000000
-      internalID: -7216623257621978514
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: objetos3_3
-      rect:
-        serializedVersion: 2
-        x: 23
-        y: 21
-        width: 380
-        height: 43
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2ccc8992376390af0800000000000000
-      internalID: -429752421190153022
+      spriteID: 380abee50b7307760800000000000000
+      internalID: 7453518613944443011
       vertices: []
       indices: 
       edges: []
@@ -210,10 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      objetos3_0: -3097037665482935029
-      objetos3_1: 6827578037456516772
-      objetos3_2: -7216623257621978514
-      objetos3_3: -429752421190153022
+      Verso_0: 7453518613944443011
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

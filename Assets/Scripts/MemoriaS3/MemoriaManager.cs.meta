@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: f126324fab92c6940a7bfbf92d1974c0
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - cartaPrefab: {fileID: 776362187543594529, guid: d6f16a41aaa08524e9ff64612d2f33ed, type: 3}
+  - gridCartas: {instanceID: 0}
+  - painelPopup: {instanceID: 0}
+  - popupImagem: {instanceID: 0}
+  - popupTexto: {instanceID: 0}
+  - irmaDialogo: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -19,8 +19,10 @@ public class DialogueSystem : MonoBehaviour
     int currentText = 0;
     bool finished = false;
 
+    public System.Action OnDialogueEnd;
+
     TypeTextAnimation typeText;
-    DialogueUI dialogueUI;
+    public DialogueUI dialogueUI;
 
     public STATE state;
 
@@ -42,6 +44,13 @@ public class DialogueSystem : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            Debug.Log("Fim de diálogo manual");
+            OnDialogueEnd?.Invoke();
+        }
+
         // Spawn de objects
         if (ObjectManager.instance.objects.Length != 0)
         {
@@ -57,7 +66,7 @@ public class DialogueSystem : MonoBehaviour
 
         if (state == STATE.DISABLED) return;
 
-        switch(state) 
+        switch (state)
         {
             case STATE.WAITING:
                 Waiting();
@@ -65,7 +74,7 @@ public class DialogueSystem : MonoBehaviour
             case STATE.TYPING:
                 Typing();
                 break;
-                
+
         }
 
     }
@@ -77,7 +86,7 @@ public class DialogueSystem : MonoBehaviour
             dialogueUI.Enable();
         }
 
-        dialogueUI.SetName(dialogueData.talkScript[currentText].name == "PLAYER" ? PlayerData.playerName :dialogueData.talkScript[currentText].name);
+        dialogueUI.SetName(dialogueData.talkScript[currentText].name == "PLAYER" ? PlayerData.playerName : dialogueData.talkScript[currentText].name);
 
         typeText.fullText = dialogueData.talkScript[currentText++].text;
 
@@ -87,11 +96,11 @@ public class DialogueSystem : MonoBehaviour
         state = STATE.TYPING;
     }
 
-    
+
 
     private void OnTypeFinished()
     {
-       state = STATE.WAITING; 
+        state = STATE.WAITING;
     }
 
     private void Waiting()
@@ -108,6 +117,9 @@ public class DialogueSystem : MonoBehaviour
                 state = STATE.DISABLED;
                 currentText = 0;
                 finished = false;
+
+                OnDialogueEnd?.Invoke();
+                Debug.Log("Evento chamado");
             }
         }
 
@@ -120,5 +132,9 @@ public class DialogueSystem : MonoBehaviour
             typeText.Skip();
             state = STATE.WAITING;
         }
+    }
+    public int GetCurrentTextIndex()
+    {
+        return currentText;
     }
 }
