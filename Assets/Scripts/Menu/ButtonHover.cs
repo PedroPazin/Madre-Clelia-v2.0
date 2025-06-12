@@ -12,7 +12,6 @@ public class ButtonHover : MonoBehaviour
         var hoverColor = new Color(0.97f, 0.27f, 0.25f, 1);
         LeanTween.value(button.gameObject, color, hoverColor, 0.1f).setOnUpdate((Color val) =>
         {
-            Debug.Log(val);
             text.faceColor = val;
         });
     }
@@ -23,7 +22,6 @@ public class ButtonHover : MonoBehaviour
         var hoverColor = new Color(0.89f, 0.89f, 0.89f, 1);
         LeanTween.value(button.gameObject, color, Color.white, 0.1f).setOnUpdate((Color val) =>
         {
-            Debug.Log(val);
             text.faceColor = val;
         }).setLoopClamp().setRepeat(1);
     }

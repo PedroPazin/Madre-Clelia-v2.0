@@ -1,5 +1,6 @@
 using System;
 using Unity.VisualScripting;
+using UnityEditor.SpeedTree.Importer;
 using UnityEngine;
 
 public class FadeIn : MonoBehaviour
@@ -11,6 +12,7 @@ public class FadeIn : MonoBehaviour
     [SerializeField] private float duration;
     [SerializeField] private float delay;
     [SerializeField] private LeanTweenType easeType;
+    public float dif;
 
     public enum FunctionType
     {
@@ -41,22 +43,22 @@ public class FadeIn : MonoBehaviour
 
     public void FadeInY()
     {
-        LeanTween.moveY(gameObject, flagFadeIn.transform.position.y, duration).setEase(easeType).setDelay(delay);
+        LeanTween.moveY(gameObject, flagFadeIn.transform.position.y + dif, duration).setEase(easeType).setDelay(delay);
     }
 
     public void FadeInX()
     {
-        LeanTween.moveX(gameObject, flagFadeIn.transform.position.x, duration).setEase(easeType).setDelay(delay);
+        LeanTween.moveX(gameObject, flagFadeIn.transform.position.x + dif, duration).setEase(easeType).setDelay(delay);
     }
 
     public void FadeOutX()
     {
-        LeanTween.moveX(gameObject, flagFadeOut.transform.position.x, duration).setEaseInBack().setDelay(delay);
+        LeanTween.moveX(gameObject, flagFadeOut.transform.position.x + dif, duration).setEaseInBack().setDelay(delay);
     }
 
     public void FadeOutY()
     {
-        LeanTween.moveY(gameObject, flagFadeOut.transform.position.y, duration).setEaseInBack().setDelay(delay);
+        LeanTween.moveY(gameObject, flagFadeOut.transform.position.y + dif, duration).setEaseInBack().setDelay(delay);
     }
 
     // Update is called once per frame
