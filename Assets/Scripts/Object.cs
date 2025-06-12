@@ -25,7 +25,7 @@ public class Object : MonoBehaviour
     {
         if(_player != null)
         {
-            if (PauseMenu.instance.isPaused)
+            if (PauseMenu.instance.activeOption != PauseMenu.ACTIVE_OPTION.NONE)
             {
                 return;
             }

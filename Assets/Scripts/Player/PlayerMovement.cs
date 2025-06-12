@@ -30,7 +30,7 @@ public class PlaterMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (PauseMenu.instance.isPaused)
+        if (PauseMenu.instance.activeOption != PauseMenu.ACTIVE_OPTION.NONE)
         {
             return;
         }
