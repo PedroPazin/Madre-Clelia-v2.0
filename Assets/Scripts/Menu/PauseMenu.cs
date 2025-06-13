@@ -17,6 +17,7 @@ public class PauseMenu : MonoBehaviour
         CONFIG,
         MAIN,
         NONE,
+        INTERACTING,
     }
 
     public ACTIVE_OPTION activeOption;
@@ -54,16 +55,15 @@ public class PauseMenu : MonoBehaviour
             switch (activeOption)
             {
                 case ACTIVE_OPTION.NONE:
-                    canPause = false;
                     Pause();
                     break;
                 case ACTIVE_OPTION.MAIN:
-                    canPause = true;
                     Resume();
                     break;
                 case ACTIVE_OPTION.CONFIG:
-                    canPause = false;
                     Return();
+                    break;
+                case ACTIVE_OPTION.INTERACTING:
                     break;
             }
         }

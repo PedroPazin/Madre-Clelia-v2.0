@@ -30,7 +30,7 @@ public class PlaterMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (PauseMenu.instance.activeOption != PauseMenu.ACTIVE_OPTION.NONE)
+        if (PauseMenu.instance.activeOption != PauseMenu.ACTIVE_OPTION.NONE || !Player.instance.canWalk)
         {
             return;
         }
@@ -45,7 +45,8 @@ public class PlaterMovement : MonoBehaviour
             Dictionary<int, AudioClip> walkingSounds = new()
             {
                 {1, AudioManager.instance.grass},
-                {2, AudioManager.instance.stone},
+                {2, AudioManager.instance.wood},
+                {4, AudioManager.instance.stone},
             };
 
             if (!_isWalkingSoundsActive)

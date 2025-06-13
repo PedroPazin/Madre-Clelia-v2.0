@@ -65,14 +65,20 @@ public class DialogueSystem : MonoBehaviour
             }
         }
 
-        if (state == STATE.DISABLED) return;
+        if (state == STATE.DISABLED)
+        {
+            Player.instance.canWalk = true;
+            return;
+        }
 
         switch (state)
         {
             case STATE.WAITING:
+                Player.instance.canWalk = false;
                 Waiting();
                 break;
             case STATE.TYPING:
+                Player.instance.canWalk = false;
                 Typing();
                 break;
 

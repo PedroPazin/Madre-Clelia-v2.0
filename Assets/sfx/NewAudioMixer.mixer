@@ -55,6 +55,8 @@ AudioMixerController:
     name: music
   - guid: 6cb804a8026a7bc4db95d4df74a25859
     name: sfx
+  - guid: c6b4ab685aa5472429939f05173c5b91
+    name: walking
   m_AudioMixerGroupViews:
   - guids:
     - 5eec602d41b3a9e42922a64fb96794a6
@@ -113,7 +115,7 @@ AudioMixerSnapshotController:
     49936a531ed56a8488d86cc57ea38846: -18.592384
     414ec49488497da41a9ec3a31d896878: 2
     7e781828143af2748b9ad332bcef264d: -11.400904
-    c6b4ab685aa5472429939f05173c5b91: 11.135805
+    c6b4ab685aa5472429939f05173c5b91: 10.437404
     6cb804a8026a7bc4db95d4df74a25859: -11.944499
   m_TransitionOverrides: {}
 --- !u!243 &3002402266386039726

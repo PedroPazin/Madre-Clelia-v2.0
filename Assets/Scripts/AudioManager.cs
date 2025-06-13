@@ -15,6 +15,7 @@ public class AudioManager : MonoBehaviour
     public AudioClip music;
     public AudioClip grass;
     public AudioClip stone;
+    public AudioClip wood;
 
 
     public static AudioManager instance;

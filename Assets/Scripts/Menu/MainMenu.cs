@@ -98,6 +98,7 @@ public class MainMenu : MonoBehaviour
 
     public void Return(GameObject offOption)
     {
+        AudioManager.instance.PlaySFXOneTime(AudioManager.instance.click, AudioManager.instance.sfxSource);
         StartCoroutine(FadeInButtons(offOption));
     }
 

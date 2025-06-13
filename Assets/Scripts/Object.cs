@@ -62,9 +62,9 @@ public class Object : MonoBehaviour
     public IEnumerator Interact()
     {
         info.SetActive(true);
-        PauseMenu.instance.canPause = false;
+        PauseMenu.instance.activeOption = PauseMenu.ACTIVE_OPTION.INTERACTING;
         yield return new WaitUntil(() => Input.GetKeyDown("escape"));
-        PauseMenu.instance.canPause = true;
+        PauseMenu.instance.activeOption = PauseMenu.ACTIVE_OPTION.NONE;
         info.SetActive(false);
         _interacted = true;
     }

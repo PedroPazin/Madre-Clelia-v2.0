@@ -1,6 +1,7 @@
 using System;
 using UnityEngine;
 using UnityEngine.Audio;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class VolumeSettings : MonoBehaviour
@@ -8,6 +9,9 @@ public class VolumeSettings : MonoBehaviour
     public AudioMixer myMixer;
     public Slider musicSlider;
     public Slider sfxSlider;
+
+    private bool _isDone;
+    public int diff = 0;
 
     private void Start()
     {
@@ -22,6 +26,18 @@ public class VolumeSettings : MonoBehaviour
 
         SetVolumeMusic();
         SetVolumeSFX();
+    }
+
+    private void Update()
+    {
+        if (_isDone) return;
+
+        if (SceneManager.GetActiveScene().buildIndex == 4)
+        {
+            float volume = sfxSlider.value;
+            myMixer.SetFloat("walking", MathF.Log10(volume - diff) * 20);
+            _isDone = true;
+        }
     }
 
     public void SetVolumeMusic()
