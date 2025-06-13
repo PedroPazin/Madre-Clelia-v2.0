@@ -23,7 +23,7 @@ public class CartaMemoria : MonoBehaviour
 
     public void VirarCarta()
     {
-        if (revelada) return;
+        if (revelada || manager.bloqueandoClique) return;
 
         revelada = true;
         verso.SetActive(false);

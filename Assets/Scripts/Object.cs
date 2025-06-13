@@ -10,7 +10,6 @@ public class Object : MonoBehaviour
     private bool _interacted;
     public GameObject info;
 
-
     public int health;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -50,6 +49,7 @@ public class Object : MonoBehaviour
             interactionText.SetActive(true);
             if(Input.GetKeyDown("e"))
             {
+                ObjectManager.instance.canClose = false;
                 StartCoroutine(Interact());
             }
         }
@@ -63,7 +63,7 @@ public class Object : MonoBehaviour
     {
         info.SetActive(true);
         PauseMenu.instance.activeOption = PauseMenu.ACTIVE_OPTION.INTERACTING;
-        yield return new WaitUntil(() => Input.GetKeyDown("escape"));
+        yield return new WaitUntil(() => Input.GetKeyDown("escape") || ObjectManager.instance.canClose);
         PauseMenu.instance.activeOption = PauseMenu.ACTIVE_OPTION.NONE;
         info.SetActive(false);
         _interacted = true;

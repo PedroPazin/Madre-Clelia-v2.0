@@ -82,11 +82,18 @@ public class MainMenu : MonoBehaviour
         StartCoroutine(FadeOutButtons(configOptions));
     }
 
+    public void Credits()
+    {
+        AudioManager.instance.PlaySFXOneTime(AudioManager.instance.click, AudioManager.instance.sfxSource);
+        SceneController.instance.LoadCredits();
+    }
+
     public void PlayGame()
     {
         AudioManager.instance.PlaySFXOneTime(AudioManager.instance.click, AudioManager.instance.sfxSource);
+        if (inputField.text == "") return;
         PlayerData.playerName = inputField.text;
-        SceneManager.LoadSceneAsync(1);
+        SceneController.instance.NextLevel();
     }
 
     public void ChooseName()

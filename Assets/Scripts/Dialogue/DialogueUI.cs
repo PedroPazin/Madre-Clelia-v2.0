@@ -12,6 +12,8 @@ public class DialogueUI : MonoBehaviour
     TextMeshProUGUI nameText;
     TextMeshProUGUI talkText;
 
+    public GameObject enterKeybind;
+
     public float speed = 10f;
     bool isOpen = false;
 
@@ -31,16 +33,21 @@ public class DialogueUI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       if(isOpen)
-       {
+        if (isOpen)
+        {
             background.fillAmount = Mathf.Lerp(background.fillAmount, 1, speed * Time.deltaTime);
-       } 
-       else 
-       {
+        }
+        else
+        {
             background.fillAmount = Mathf.Lerp(background.fillAmount, 0, speed * Time.deltaTime);
-       }
+        }
     }
 
+    private IEnumerator ShowEnter()
+    {
+        yield return new WaitForSeconds(0.3f);
+        enterKeybind.SetActive(true);
+    }
     public void SetName(string name)
     {
         nameText.text = name;
@@ -48,12 +55,14 @@ public class DialogueUI : MonoBehaviour
 
     public void Enable()
     {
+        StartCoroutine(ShowEnter());
         background.fillAmount = 0;
         isOpen = true;
     }
 
     public void Disable()
     {
+        enterKeybind.SetActive(false);
         isOpen = false;
         nameText.text = "";
         talkText.text = "";

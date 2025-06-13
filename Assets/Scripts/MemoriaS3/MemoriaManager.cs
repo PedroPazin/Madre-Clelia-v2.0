@@ -35,7 +35,7 @@ public class MemoriaManager : MonoBehaviour
     private List<GameObject> cartasInstanciadas = new List<GameObject>();
     private CartaMemoria primeiraCarta = null;
     private int paresEncontrados = 0;
-    private bool bloqueandoClique = false;
+    public bool bloqueandoClique = false;
 
     public void IniciarJogo()
     {
@@ -93,18 +93,19 @@ public class MemoriaManager : MonoBehaviour
     }
 }
     IEnumerator ResetarCartasComDelay(CartaMemoria cartaA, CartaMemoria cartaB)
-{
-    yield return new WaitForSeconds(1f);
+    {
+        yield return new WaitForSeconds(1f);
 
-    cartaA.Resetar();
-    cartaB.Resetar();
+        cartaA.Resetar();
+        cartaB.Resetar();
 
-    primeiraCarta = null;
-    bloqueandoClique = false;
-}
+        primeiraCarta = null;
+        bloqueandoClique = false;
+    }
 
     IEnumerator EncerrarMinigame()
     {
+        yield return new WaitUntil(() => painelPopup.activeSelf == false);
         yield return new WaitForSeconds(0.5f); // pequena pausa antes de fechar
         painelPopup.SetActive(false);
         yield return new WaitForSeconds(0.2f);

@@ -8,6 +8,8 @@ public class ObjectManager : MonoBehaviour
     int countObjets;
     public static ObjectManager instance;
 
+    public bool canClose;
+
     private void Awake()
     {
         if (instance == null)
@@ -29,6 +31,11 @@ public class ObjectManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+    }
+
+    public void Close()
+    {
+        canClose = true;
     }
 
     public void CountObjects()

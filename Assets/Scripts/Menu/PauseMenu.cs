@@ -38,11 +38,6 @@ public class PauseMenu : MonoBehaviour
 
     void Start()
     {
-        for (int i = 0; i < buttons.Length; i++)
-        {
-            buttons[i].GetComponent<RectTransform>().anchoredPosition = new Vector2(-1552f, -100 + (-130 * i));
-        }
-
         canPause = true;
         activeOption = ACTIVE_OPTION.NONE;
     }
@@ -103,6 +98,12 @@ public class PauseMenu : MonoBehaviour
     {
         AudioManager.instance.PlaySFXOneTime(AudioManager.instance.click, AudioManager.instance.sfxSource);
         StartCoroutine(FadeOutButtonsY(configMenu, pauseMenu, ACTIVE_OPTION.MAIN));
+    }
+
+    public void ReturnMainMenu()
+    {
+        AudioManager.instance.PlaySFXOneTime(AudioManager.instance.click, AudioManager.instance.sfxSource);
+        SceneController.instance.LoadSceneByIndex(0);
     }
 
     public void Config()

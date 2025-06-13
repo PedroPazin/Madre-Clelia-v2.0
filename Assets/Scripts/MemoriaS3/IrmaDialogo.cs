@@ -48,6 +48,8 @@ public class IrmaDialogo : MonoBehaviour
     public void IniciarDialogoFinal()
     {
         dialogueSystem.dialogueData = final3;
+        dialogueSystem.OnDialogueEnd -= OnIntroTerminou;
+        dialogueSystem.OnDialogueEnd += SceneController.instance.LoadCredits;
         dialogueSystem.Next();
     }
 
