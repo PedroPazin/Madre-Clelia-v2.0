@@ -1,6 +1,5 @@
 using System;
 using Unity.VisualScripting;
-using UnityEditor.SpeedTree.Importer;
 using UnityEngine;
 
 public class FadeIn : MonoBehaviour
